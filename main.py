@@ -16,21 +16,25 @@ def bestCase(list1, list2):
             resultList.append(num)
     print(resultList)
 
+
 def worstCase(list1, list2):
     resultList = []
-    target = 6   
+    target = 6
 
     for numFromList1 in list1:
         for numFromList2 in list2:
-            if (target - numFromList1 - numFromList2 == 0):
-                resultList.append (numFromList1, numFromList2)
+            if (numFromList1 * numFromList2 == target):
+                resultList.append(numFromList1)
+                resultList.append(numFromList2)
     print(resultList)
+
 
 def initializeBigList():
     arr = []
-    for i in range(10000):
+    for i in range(1000):
         arr.append(1)
     return arr
+
 
 if __name__ == '__main__':
     list1 = initializeBigList()
