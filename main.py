@@ -45,7 +45,7 @@ def worstCase(list1, list2):
 
 def initializeBigList():
     arr = []
-    for i in range(9):
+    for i in range(10000):
         arr.append(1)
     return arr
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     list2 = initializeBigList()
     list2.append(6)
 
-    print("When list sizes are 9 elements")
+    print("When list sizes are 10,000 elements")
 
     start_time = time.time()
     bestCase(list1, list2)
